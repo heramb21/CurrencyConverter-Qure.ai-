@@ -7,25 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C220AC62B2EC672002DDE83 /* RatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220AC52B2EC672002DDE83 /* RatesTableViewController.swift */; };
+		8C220AC82B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220AC72B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift */; };
 		8CDD8FA82B2DF314002C72C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FA72B2DF314002C72C8 /* AppDelegate.swift */; };
 		8CDD8FAA2B2DF314002C72C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FA92B2DF314002C72C8 /* SceneDelegate.swift */; };
 		8CDD8FAC2B2DF314002C72C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FAB2B2DF314002C72C8 /* ViewController.swift */; };
 		8CDD8FAF2B2DF314002C72C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD8FAD2B2DF314002C72C8 /* Main.storyboard */; };
-		8CDD8FB22B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FB02B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodeld */; };
 		8CDD8FB42B2DF315002C72C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD8FB32B2DF315002C72C8 /* Assets.xcassets */; };
 		8CDD8FB72B2DF315002C72C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD8FB52B2DF315002C72C8 /* LaunchScreen.storyboard */; };
+		8CDD8FC72B2DF53B002C72C8 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FC62B2DF53B002C72C8 /* UIActivityIndicatorView.swift */; };
+		8CDD8FC92B2DF55F002C72C8 /* UIAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FC82B2DF55F002C72C8 /* UIAlertView.swift */; };
+		8CDD8FCB2B2DF5F3002C72C8 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FCA2B2DF5F3002C72C8 /* GlobalSettings.swift */; };
+		8CDD8FCD2B2DF60E002C72C8 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FCC2B2DF60E002C72C8 /* CommonMethods.swift */; };
+		8CDD8FCF2B2DF649002C72C8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FCE2B2DF649002C72C8 /* ApiService.swift */; };
+		8CDD8FD12B2DF6C2002C72C8 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FD02B2DF6C2002C72C8 /* ErrorModel.swift */; };
+		8CDD8FD32B2DF75B002C72C8 /* RatesDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FD22B2DF75B002C72C8 /* RatesDetailModel.swift */; };
+		8CDD8FD52B2DF782002C72C8 /* CurrencyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FD42B2DF782002C72C8 /* CurrencyHistory.swift */; };
+		8CDD8FD72B2DF7A3002C72C8 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FD62B2DF7A3002C72C8 /* ResultModel.swift */; };
+		8CDD8FD92B2DF7C5002C72C8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FD82B2DF7C4002C72C8 /* Currency.swift */; };
+		8CDD8FDB2B2DF7DE002C72C8 /* ConversionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FDA2B2DF7DE002C72C8 /* ConversionData.swift */; };
+		8CDD8FDD2B2DF89D002C72C8 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FDC2B2DF89D002C72C8 /* RateCell.swift */; };
+		8CDD8FDF2B2DF943002C72C8 /* CurrencyHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FDE2B2DF943002C72C8 /* CurrencyHistoryCell.swift */; };
+		8CDD8FE12B2DF999002C72C8 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD8FE02B2DF999002C72C8 /* CurrencyCell.swift */; };
+		8CEA3B682B2E1E6600694F13 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B672B2E1E6600694F13 /* ConverterViewController.swift */; };
+		8CEA3B6C2B2E255400694F13 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6B2B2E255400694F13 /* CurrenciesViewController.swift */; };
+		8CEA3B6E2B2E2EDA00694F13 /* HistoryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6D2B2E2EDA00694F13 /* HistoryMainViewController.swift */; };
+		8CEA3B702B2E2F7B00694F13 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C220AC52B2EC672002DDE83 /* RatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesTableViewController.swift; sourceTree = "<group>"; };
+		8C220AC72B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewController.swift; sourceTree = "<group>"; };
 		8CDD8FA42B2DF314002C72C8 /* Qure.ai Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qure.ai Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDD8FA72B2DF314002C72C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDD8FA92B2DF314002C72C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CDD8FAB2B2DF314002C72C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CDD8FAE2B2DF314002C72C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8CDD8FB12B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qure_ai_Currency_Converter.xcdatamodel; sourceTree = "<group>"; };
 		8CDD8FB32B2DF315002C72C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDD8FB62B2DF315002C72C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8CDD8FB82B2DF315002C72C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDD8FB82B2DF315002C72C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		8CDD8FC62B2DF53B002C72C8 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		8CDD8FC82B2DF55F002C72C8 /* UIAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertView.swift; sourceTree = "<group>"; };
+		8CDD8FCA2B2DF5F3002C72C8 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		8CDD8FCC2B2DF60E002C72C8 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		8CDD8FCE2B2DF649002C72C8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		8CDD8FD02B2DF6C2002C72C8 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		8CDD8FD22B2DF75B002C72C8 /* RatesDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesDetailModel.swift; sourceTree = "<group>"; };
+		8CDD8FD42B2DF782002C72C8 /* CurrencyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHistory.swift; sourceTree = "<group>"; };
+		8CDD8FD62B2DF7A3002C72C8 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		8CDD8FD82B2DF7C4002C72C8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		8CDD8FDA2B2DF7DE002C72C8 /* ConversionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionData.swift; sourceTree = "<group>"; };
+		8CDD8FDC2B2DF89D002C72C8 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		8CDD8FDE2B2DF943002C72C8 /* CurrencyHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHistoryCell.swift; sourceTree = "<group>"; };
+		8CDD8FE02B2DF999002C72C8 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		8CEA3B672B2E1E6600694F13 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		8CEA3B6B2B2E255400694F13 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
+		8CEA3B6D2B2E2EDA00694F13 /* HistoryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMainViewController.swift; sourceTree = "<group>"; };
+		8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				8CDD8FA62B2DF314002C72C8 /* Qure.ai Currency Converter */,
+				8CDD8FB82B2DF315002C72C8 /* Info.plist */,
 				8CDD8FA52B2DF314002C72C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,16 +97,98 @@
 		8CDD8FA62B2DF314002C72C8 /* Qure.ai Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
+				8CDD8FC52B2DF51F002C72C8 /* Extensions */,
+				8CDD8FC42B2DF518002C72C8 /* Helpers */,
+				8CDD8FC32B2DF50D002C72C8 /* Network */,
+				8CDD8FC22B2DF504002C72C8 /* Models */,
+				8CDD8FC12B2DF4E9002C72C8 /* Views */,
+				8CDD8FBE2B2DF3C4002C72C8 /* Controllers */,
+				8CDD8FBF2B2DF3EE002C72C8 /* Storyboards */,
+				8CDD8FC02B2DF473002C72C8 /* Resources */,
 				8CDD8FA72B2DF314002C72C8 /* AppDelegate.swift */,
 				8CDD8FA92B2DF314002C72C8 /* SceneDelegate.swift */,
-				8CDD8FAB2B2DF314002C72C8 /* ViewController.swift */,
-				8CDD8FAD2B2DF314002C72C8 /* Main.storyboard */,
-				8CDD8FB32B2DF315002C72C8 /* Assets.xcassets */,
-				8CDD8FB52B2DF315002C72C8 /* LaunchScreen.storyboard */,
-				8CDD8FB82B2DF315002C72C8 /* Info.plist */,
-				8CDD8FB02B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodeld */,
 			);
 			path = "Qure.ai Currency Converter";
+			sourceTree = "<group>";
+		};
+		8CDD8FBE2B2DF3C4002C72C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FAB2B2DF314002C72C8 /* ViewController.swift */,
+				8CEA3B672B2E1E6600694F13 /* ConverterViewController.swift */,
+				8CEA3B6B2B2E255400694F13 /* CurrenciesViewController.swift */,
+				8CEA3B6D2B2E2EDA00694F13 /* HistoryMainViewController.swift */,
+				8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */,
+				8C220AC52B2EC672002DDE83 /* RatesTableViewController.swift */,
+				8C220AC72B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CDD8FBF2B2DF3EE002C72C8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FAD2B2DF314002C72C8 /* Main.storyboard */,
+				8CDD8FB52B2DF315002C72C8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CDD8FC02B2DF473002C72C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FB32B2DF315002C72C8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8CDD8FC12B2DF4E9002C72C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FDC2B2DF89D002C72C8 /* RateCell.swift */,
+				8CDD8FDE2B2DF943002C72C8 /* CurrencyHistoryCell.swift */,
+				8CDD8FE02B2DF999002C72C8 /* CurrencyCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CDD8FC22B2DF504002C72C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FD02B2DF6C2002C72C8 /* ErrorModel.swift */,
+				8CDD8FD22B2DF75B002C72C8 /* RatesDetailModel.swift */,
+				8CDD8FD42B2DF782002C72C8 /* CurrencyHistory.swift */,
+				8CDD8FD62B2DF7A3002C72C8 /* ResultModel.swift */,
+				8CDD8FD82B2DF7C4002C72C8 /* Currency.swift */,
+				8CDD8FDA2B2DF7DE002C72C8 /* ConversionData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CDD8FC32B2DF50D002C72C8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FCE2B2DF649002C72C8 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CDD8FC42B2DF518002C72C8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FCA2B2DF5F3002C72C8 /* GlobalSettings.swift */,
+				8CDD8FCC2B2DF60E002C72C8 /* CommonMethods.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8CDD8FC52B2DF51F002C72C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD8FC62B2DF53B002C72C8 /* UIActivityIndicatorView.swift */,
+				8CDD8FC82B2DF55F002C72C8 /* UIAlertView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +263,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDD8FAC2B2DF314002C72C8 /* ViewController.swift in Sources */,
+				8CDD8FE12B2DF999002C72C8 /* CurrencyCell.swift in Sources */,
+				8CDD8FDF2B2DF943002C72C8 /* CurrencyHistoryCell.swift in Sources */,
+				8C220AC62B2EC672002DDE83 /* RatesTableViewController.swift in Sources */,
 				8CDD8FA82B2DF314002C72C8 /* AppDelegate.swift in Sources */,
-				8CDD8FB22B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodeld in Sources */,
+				8CEA3B6E2B2E2EDA00694F13 /* HistoryMainViewController.swift in Sources */,
 				8CDD8FAA2B2DF314002C72C8 /* SceneDelegate.swift in Sources */,
+				8CDD8FC92B2DF55F002C72C8 /* UIAlertView.swift in Sources */,
+				8CDD8FD52B2DF782002C72C8 /* CurrencyHistory.swift in Sources */,
+				8CEA3B702B2E2F7B00694F13 /* HistoryDetailsViewController.swift in Sources */,
+				8C220AC82B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift in Sources */,
+				8CDD8FDB2B2DF7DE002C72C8 /* ConversionData.swift in Sources */,
+				8CDD8FC72B2DF53B002C72C8 /* UIActivityIndicatorView.swift in Sources */,
+				8CDD8FCD2B2DF60E002C72C8 /* CommonMethods.swift in Sources */,
+				8CDD8FD32B2DF75B002C72C8 /* RatesDetailModel.swift in Sources */,
+				8CDD8FD92B2DF7C5002C72C8 /* Currency.swift in Sources */,
+				8CDD8FD72B2DF7A3002C72C8 /* ResultModel.swift in Sources */,
+				8CDD8FDD2B2DF89D002C72C8 /* RateCell.swift in Sources */,
+				8CDD8FD12B2DF6C2002C72C8 /* ErrorModel.swift in Sources */,
+				8CDD8FCF2B2DF649002C72C8 /* ApiService.swift in Sources */,
+				8CEA3B6C2B2E255400694F13 /* CurrenciesViewController.swift in Sources */,
+				8CDD8FCB2B2DF5F3002C72C8 /* GlobalSettings.swift in Sources */,
+				8CEA3B682B2E1E6600694F13 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +432,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Qure.ai Currency Converter/Info.plist";
+				INFOPLIST_FILE = "/Users/varunjoshi/Documents/qure.ai Test/Currency Converter/Qure.ai Currency Converter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +461,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Qure.ai Currency Converter/Info.plist";
+				INFOPLIST_FILE = "/Users/varunjoshi/Documents/qure.ai Test/Currency Converter/Qure.ai Currency Converter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,19 +504,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8CDD8FB02B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8CDD8FB12B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodel */,
-			);
-			currentVersion = 8CDD8FB12B2DF314002C72C8 /* Qure_ai_Currency_Converter.xcdatamodel */;
-			path = Qure_ai_Currency_Converter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8CDD8F9C2B2DF314002C72C8 /* Project object */;
 }
