@@ -13,6 +13,7 @@ class ConverterViewController: UIViewController {
     private var currentRatesDate: String?
     private var selectedCurrency: ConversionCurrencyData?
     private var selectedConversionDetails = ConversionDetails()
+    private var selectedConversionHistory: [ConversionHistoryData] = []
 
     // MARK: - IBOutlets
     @IBOutlet weak var lblLastUpdate: UILabel!
@@ -86,6 +87,23 @@ class ConverterViewController: UIViewController {
                                             fromAmount: Double(amount.replacingOccurrences(of: ",", with: ".")) ?? 0.0)
         return conversionData
     }
+    
+    func appendConversionHistoryData() -> ConversionHistoryData? {
+        guard
+            let amount = txtLeftInput.text,
+            let fromCur = lblLeftCurrency.text,
+            let toCur = lblRightCurrency.text,
+            let date = currentRatesDate,
+            let toAmount = txtRightInput.text
+            else { return nil }
+        let historyData = ConversionHistoryData(fromCurrency: fromCur,
+                                                toCurrency: toCur,
+                                                convertDate: date,
+                                                fromAmount: Double(amount.replacingOccurrences(of: ",", with: ".")) ?? 0.0,
+        toAmount:Double(toAmount.replacingOccurrences(of: ",", with: ".")) ?? 0.0)
+        print("historydata:\(self.selectedConversionHistory)")
+        return historyData
+    }
 
     func revertCurrencies(mainImg: UIImage?, mainCur: String?, mainAmt: String?) {
         imgLeftCurrency.image = imgRightCurrency.image
@@ -121,6 +139,8 @@ class ConverterViewController: UIViewController {
                 if !rates.rates.isEmpty {
                     let amount = rates.rates[0].value
                     self.txtRightInput.text = "\(amount)"
+                    guard let selectedHistory = self.appendConversionHistoryData() else {return}
+                    self.selectedConversionHistory.append(selectedHistory)
                 }
                 spinner.dismissLoader()
             }
@@ -136,6 +156,10 @@ class ConverterViewController: UIViewController {
         if segue.identifier == "currencies" {
             guard let currenciesVC = segue.destination as? CurrenciesViewController else {return}
             currenciesVC.selectedCurrency.details = self.selectedConversionDetails
+        }
+        if segue.identifier == "conversionhistory" {
+            guard let historyVC = segue.destination as? ConversionHistoryTableViewController else {return}
+            historyVC.conversionData = self.selectedConversionHistory
         }
     }
 

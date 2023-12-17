@@ -174,12 +174,6 @@
                                     <action selector="btnReplaceAction:" destination="CGk-TB-IS4" eventType="touchUpInside" id="30l-RT-vEx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-A2-fwF">
-                                <rect key="frame" x="239" y="77" width="120" height="50"/>
-                                <connections>
-                                    <action selector="btnToAction:" destination="CGk-TB-IS4" eventType="touchUpInside" id="PWW-l1-5Jc"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rL4-qa-nDA">
                                 <rect key="frame" x="239" y="135" width="120" height="50"/>
                                 <subviews>
@@ -211,7 +205,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA7-PL-BFy">
-                                        <rect key="frame" x="68.5" y="12.5" width="43.5" height="25.5"/>
+                                        <rect key="frame" x="68.5" y="12.5" width="43.5" height="25"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -228,6 +222,12 @@
                                     <constraint firstItem="TjJ-gz-peU" firstAttribute="leading" secondItem="nYF-Rx-RTG" secondAttribute="leading" constant="8" id="xDp-eu-UZk"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-A2-fwF">
+                                <rect key="frame" x="239" y="77" width="120" height="50"/>
+                                <connections>
+                                    <action selector="btnToAction:" destination="CGk-TB-IS4" eventType="touchUpInside" id="PWW-l1-5Jc"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-zd-TdR">
                                 <rect key="frame" x="16" y="77" width="120" height="50"/>
                                 <subviews>
@@ -239,7 +239,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6on-vB-oH4">
-                                        <rect key="frame" x="71" y="12.5" width="41" height="25.5"/>
+                                        <rect key="frame" x="71" y="12.5" width="41" height="25"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -299,6 +299,28 @@
                                     <action selector="btnEqualAction:" destination="CGk-TB-IS4" eventType="touchUpInside" id="0Or-e1-6Eq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-yK-1aV">
+                                <rect key="frame" x="62.5" y="235.5" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.54117647058823526" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AO7-XB-r5d"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="RVr-7u-0Gu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="CONVERSION HISTORY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDisplayRatesAction:" destination="R5b-VF-kbA" eventType="touchUpInside" id="Trf-Si-ywm"/>
+                                    <segue destination="Cnz-3A-tXi" kind="show" identifier="conversionhistory" id="vtH-nh-7Sh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jsD-G7-O7w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -306,6 +328,7 @@
                             <constraint firstItem="zuU-04-O96" firstAttribute="centerY" secondItem="eGP-zd-TdR" secondAttribute="centerY" id="6t8-qa-6MV"/>
                             <constraint firstItem="eGP-zd-TdR" firstAttribute="top" secondItem="afN-PS-je0" secondAttribute="bottom" constant="8" id="IIl-8f-xz8"/>
                             <constraint firstItem="afN-PS-je0" firstAttribute="leading" secondItem="jsD-G7-O7w" secondAttribute="leading" constant="16" id="Jra-Ka-aqa"/>
+                            <constraint firstItem="HUE-yK-1aV" firstAttribute="top" secondItem="2KU-hj-f5y" secondAttribute="bottom" constant="64.5" id="K1A-kL-wsq"/>
                             <constraint firstItem="afN-PS-je0" firstAttribute="top" secondItem="jsD-G7-O7w" secondAttribute="top" constant="8" id="Mnj-57-6S5"/>
                             <constraint firstItem="jsD-G7-O7w" firstAttribute="trailing" secondItem="nYF-Rx-RTG" secondAttribute="trailing" constant="16" id="OF5-Es-cGa"/>
                             <constraint firstItem="BEp-J3-9Tu" firstAttribute="top" secondItem="eGP-zd-TdR" secondAttribute="bottom" constant="8" id="QQ1-JW-uNg"/>
@@ -321,6 +344,7 @@
                             <constraint firstItem="B88-LR-iNN" firstAttribute="leading" secondItem="eGP-zd-TdR" secondAttribute="leading" id="eWH-9t-dfu"/>
                             <constraint firstItem="rL4-qa-nDA" firstAttribute="top" secondItem="nYF-Rx-RTG" secondAttribute="bottom" constant="8" id="fAU-tZ-UnV"/>
                             <constraint firstItem="B88-LR-iNN" firstAttribute="trailing" secondItem="eGP-zd-TdR" secondAttribute="trailing" id="gRC-7X-1hp"/>
+                            <constraint firstItem="HUE-yK-1aV" firstAttribute="centerX" secondItem="Nm6-Sj-MdO" secondAttribute="centerX" id="hd0-G7-oJK"/>
                             <constraint firstItem="eGP-zd-TdR" firstAttribute="leading" secondItem="jsD-G7-O7w" secondAttribute="leading" constant="16" id="jMq-l9-aE8"/>
                             <constraint firstItem="B88-LR-iNN" firstAttribute="top" secondItem="eGP-zd-TdR" secondAttribute="top" id="k3k-Kr-YFh"/>
                             <constraint firstItem="jsD-G7-O7w" firstAttribute="trailing" secondItem="rL4-qa-nDA" secondAttribute="trailing" constant="16" id="nP6-gd-SDy"/>
@@ -343,6 +367,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buh-sI-VBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930" y="812"/>
+        </scene>
+        <!--Conversion History Table View Controller-->
+        <scene sceneID="UBx-j4-Wil">
+            <objects>
+                <tableViewController id="Cnz-3A-tXi" customClass="ConversionHistoryTableViewController" customModule="Qure_ai_Currency_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rin-JY-v1j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BWE-PW-96Z">
+                                <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWE-PW-96Z" id="0hs-rQ-sER">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cnz-3A-tXi" id="nJN-0w-mgV"/>
+                            <outlet property="delegate" destination="Cnz-3A-tXi" id="ZSQ-8g-g7l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zTV-bR-CQQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zrg-1V-Pnl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="1574"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lR6-xT-lL4">
@@ -527,7 +580,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyk-u8-0RQ">
                                 <rect key="frame" x="40" y="617" width="295" height="30"/>
-                                <color key="backgroundColor" red="0.090196078431372548" green="0.42352941176470588" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.54117647058823526" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="giL-7H-Gaw"/>
                                 </constraints>
@@ -769,7 +822,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRate" rowHeight="44" id="EX7-xz-KPw" customClass="RateCell" customModule="EcbCurrencyConverter" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRate" rowHeight="44" id="EX7-xz-KPw" customClass="RateCell" customModule="Qure_ai_Currency_Converter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EX7-xz-KPw" id="THf-aq-sdb">
@@ -888,7 +941,7 @@
                                 <rect key="frame" x="16" y="284.5" width="343" height="362.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyHistoryCell" rowHeight="30" id="gbc-tX-h22" customClass="CurrencyHistoryCell" customModule="EcbCurrencyConverter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyHistoryCell" rowHeight="30" id="gbc-tX-h22" customClass="CurrencyHistoryCell" customModule="Qure_ai_Currency_Converter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="343" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gbc-tX-h22" id="2uk-mi-Pkl">
@@ -1011,7 +1064,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KXH-OK-7of"/>
+        <segue reference="9Pv-Fq-oSP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="HomeLogo" width="256" height="256"/>

@@ -33,6 +33,9 @@
 		8CEA3B6C2B2E255400694F13 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6B2B2E255400694F13 /* CurrenciesViewController.swift */; };
 		8CEA3B6E2B2E2EDA00694F13 /* HistoryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6D2B2E2EDA00694F13 /* HistoryMainViewController.swift */; };
 		8CEA3B702B2E2F7B00694F13 /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */; };
+		8CEAF31D2B2F2271006694F4 /* ConversionHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAF31B2B2F2271006694F4 /* ConversionHistoryCell.swift */; };
+		8CEAF31E2B2F2271006694F4 /* ConversionHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAF31C2B2F2271006694F4 /* ConversionHistoryCell.xib */; };
+		8CEAF3202B2F25F4006694F4 /* ConversionHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAF31F2B2F25F4006694F4 /* ConversionHistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		8CEA3B6B2B2E255400694F13 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		8CEA3B6D2B2E2EDA00694F13 /* HistoryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMainViewController.swift; sourceTree = "<group>"; };
 		8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		8CEAF31B2B2F2271006694F4 /* ConversionHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionHistoryCell.swift; sourceTree = "<group>"; };
+		8CEAF31C2B2F2271006694F4 /* ConversionHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversionHistoryCell.xib; sourceTree = "<group>"; };
+		8CEAF31F2B2F25F4006694F4 /* ConversionHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionHistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				8CEA3B6F2B2E2F7B00694F13 /* HistoryDetailsViewController.swift */,
 				8C220AC52B2EC672002DDE83 /* RatesTableViewController.swift */,
 				8C220AC72B2EC6DF002DDE83 /* CurrencyDetailsViewController.swift */,
+				8CEAF31F2B2F25F4006694F4 /* ConversionHistoryTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +155,8 @@
 				8CDD8FDC2B2DF89D002C72C8 /* RateCell.swift */,
 				8CDD8FDE2B2DF943002C72C8 /* CurrencyHistoryCell.swift */,
 				8CDD8FE02B2DF999002C72C8 /* CurrencyCell.swift */,
+				8CEAF31B2B2F2271006694F4 /* ConversionHistoryCell.swift */,
+				8CEAF31C2B2F2271006694F4 /* ConversionHistoryCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			files = (
 				8CDD8FB72B2DF315002C72C8 /* LaunchScreen.storyboard in Resources */,
 				8CDD8FB42B2DF315002C72C8 /* Assets.xcassets in Resources */,
+				8CEAF31E2B2F2271006694F4 /* ConversionHistoryCell.xib in Resources */,
 				8CDD8FAF2B2DF314002C72C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +278,8 @@
 				8C220AC62B2EC672002DDE83 /* RatesTableViewController.swift in Sources */,
 				8CDD8FA82B2DF314002C72C8 /* AppDelegate.swift in Sources */,
 				8CEA3B6E2B2E2EDA00694F13 /* HistoryMainViewController.swift in Sources */,
+				8CEAF31D2B2F2271006694F4 /* ConversionHistoryCell.swift in Sources */,
+				8CEAF3202B2F25F4006694F4 /* ConversionHistoryTableViewController.swift in Sources */,
 				8CDD8FAA2B2DF314002C72C8 /* SceneDelegate.swift in Sources */,
 				8CDD8FC92B2DF55F002C72C8 /* UIAlertView.swift in Sources */,
 				8CDD8FD52B2DF782002C72C8 /* CurrencyHistory.swift in Sources */,
