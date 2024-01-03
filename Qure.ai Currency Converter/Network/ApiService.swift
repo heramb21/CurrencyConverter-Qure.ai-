@@ -20,6 +20,11 @@ struct ApiService {
         URLSession.shared.dataTask(with: url) { (data, response, err) in
             if let err = err {
                 print("Failed to get data:", err)
+                if let error = err as? NSError, error.domain == NSURLErrorDomain, error.code == NSURLErrorNotConnectedToInternet {
+                    DispatchQueue.main.async {
+                        self.showAlertMessage(titleStr: "Error", messageStr: error.localizedDescription)
+                    }
+                }
                 return
             }
             if let error = self.checkResponse(response: response, data: data) {

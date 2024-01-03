@@ -31,6 +31,7 @@ class ConverterViewController: UIViewController {
 
     @IBAction func btnEqualAction(_ sender: Any) {
         guard let conversionData = getConversionData() else {return}
+        view.endEditing(true)
         getApiConvertRates(data: conversionData)
     }
 

@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - IBOutlets
-    // -----------------
     @IBOutlet weak var imgStatus: UIImageView!
     @IBOutlet weak var statusIndicator: UIActivityIndicatorView!
 
